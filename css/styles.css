@@ -2,7 +2,21 @@
     background-color: #273063;
 }
 
-#NavStyle {
+.LighterBlueBackground {
+    background-color: #314083;
+}
+
+#TopNavStyle {
     height: 40px;
     border-bottom: 1px solid #929BB2;
+}
+
+#logoBar {
+    height: 110px;
+    border-bottom: 1px solid #929BB2;
+}
+
+#videoStyle {
+    width: 100%;
+    height: 100%;
 }
