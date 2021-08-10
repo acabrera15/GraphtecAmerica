@@ -23,12 +23,28 @@
 
 #bottomRowStyle {
     background-color: #314083;
+    color: #ADB2CD;
 }
 
 .TextStyle {
     font-size: 200%;
 }
 
-ul {
-    list-style-type: circle;
+@font-face {
+    font-family: "Tasse";
+    src: url("./Tasse-MediumWide.otf");
+}
+
+.TopNavText {
+    /* font-family: "Tasse"; */
+    font-size: 130%;
+}
+
+.DotDivider {
+    background-color: #ADB2CD;
+    border-radius: 30%;
+    height: 10px;
+    width: 13px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
