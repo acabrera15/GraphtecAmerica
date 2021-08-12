@@ -85,8 +85,13 @@
 
 .megamenuColHead {
     background-color: #314084;
+    width: 100%;
 }
 
 .megamenuCol {
     margin-right: 20px;
+}
+
+.megaMenuSubMenu {
+    background-color: #D7D9E7;
 }
