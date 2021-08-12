@@ -95,3 +95,7 @@
 .megaMenuSubMenu {
     background-color: #D7D9E7;
 }
+
+.megaMenuSubMenuItem {
+    color: #314083 !important;
+}
