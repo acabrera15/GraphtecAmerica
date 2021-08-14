@@ -131,6 +131,7 @@
     will-change: transform;
     margin: 0;
     padding: 0;
+    width: 300px !important;
 }
 
 .dropLeftShow:hover .dropdown-menu {
@@ -182,9 +183,13 @@
     color: #323e88;
 }
 
-
-/* .bulletStyle {
-    position: relative;
-    left: -7px;
+.leftdropItemStyle {
+    list-style: none;
     color: #323e88;
-} */
+}
+
+.bulletImageStyle {
+    height: 20px;
+    width: 22px;
+    margin-right: 10px;
+}
