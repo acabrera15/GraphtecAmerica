@@ -1,3 +1,7 @@
+.mainContainer {
+    max-width: 1600px;
+}
+
 .BoldBlueBackground {
     background-color: #273063;
 }
@@ -186,6 +190,7 @@
 .leftdropItemStyle {
     list-style: none;
     color: #323e88;
+    margin-bottom: 20px;
 }
 
 .bulletImageStyle {
