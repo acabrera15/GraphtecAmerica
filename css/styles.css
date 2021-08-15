@@ -1,5 +1,5 @@
 .mainContainer {
-    max-width: 1600px;
+    max-width: 1700px;
 }
 
 .BoldBlueBackground {
@@ -77,7 +77,7 @@
     right: 0;
     width: 60%;
     margin-top: 0;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 
@@ -197,4 +197,9 @@
     height: 20px;
     width: 22px;
     margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.flyOutItems:hover {
+    background-color: #ECECEC;
 }
