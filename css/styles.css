@@ -87,7 +87,7 @@
 .has-flyOut {
     left: 0;
     right: 0;
-    width: 60%;
+    width: 45%;
     margin-top: 0;
     margin-left: 15%;
     padding: 0;
@@ -111,15 +111,23 @@
 
 .megamenuColHead {
     background-color: #314084;
-    width: 100%;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.cutterMenuImg {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .megamenuCol {
-    margin-right: 20px;
+    padding: 0;
 }
 
 .megaMenuSubMenu {
     background-color: #D7D9E7;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .megaMenuSubMenuItem {
@@ -180,6 +188,7 @@
     padding: 0;
     margin: 0;
     height: 34px;
+    padding-left: 20px;
 }
 
 .dropdownSecondHeader {
@@ -187,6 +196,7 @@
     width: 100%;
     margin-left: 0;
     color: white;
+    padding-left: 20px;
 }
 
 .listStyle {
@@ -235,4 +245,55 @@
 
 .flyOutItems:hover {
     background-color: #ECECEC;
+}
+
+.dropdownCol {
+    padding-left: 30px;
+}
+
+.accessoryMegamenu {
+    left: 0;
+    right: 0;
+    width: 45%;
+    margin-top: 0;
+    margin-left: 6%;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.accessoryItems {
+    margin-left: 22px;
+    width: 100%;
+}
+
+.accessoryItems:hover {
+    background-color: #ECECEC;
+}
+
+.accessoryDrop {
+    position: absolute;
+    transform: translate3d(-200px, 0px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+    margin: 0;
+    padding: 0;
+    width: 200px !important;
+}
+
+.accessoryItemStyle::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #323e88;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: .4em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.accessoryItemStyle {
+    list-style: none;
 }
