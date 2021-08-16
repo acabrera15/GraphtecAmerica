@@ -134,6 +134,10 @@
     color: #314083 !important;
 }
 
+.megaMenuSubMenuItem:hover {
+    background-color: #ECECEC;
+}
+
 
 /* ============ desktop view ============ */
 
