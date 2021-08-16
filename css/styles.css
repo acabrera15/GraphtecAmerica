@@ -149,6 +149,11 @@
     }
 }
 
+.mainNavHover:hover {
+    background-color: #30427f;
+    height: 40px;
+}
+
 .leftDrop {
     position: absolute;
     transform: translate3d(-252px, 0px, 0px);
