@@ -250,6 +250,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: "Myriad Pro Bold";
 }
 
 .flyOutItems:hover {
@@ -273,6 +274,7 @@
 .accessoryItems {
     margin-left: 22px;
     width: 80%;
+    font-family: "Myriad Pro Bold";
 }
 
 .accessoryItems:hover {
