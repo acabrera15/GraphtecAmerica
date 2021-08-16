@@ -15,9 +15,17 @@
     border-bottom: 1px solid #929BB2;
 }
 
+#topNavContainer {
+    margin-left: 30px;
+}
+
 #logoBar {
     height: 110px;
     border-bottom: 1px solid #929BB2;
+}
+
+#mainLogoStyle {
+    margin-left: 40px;
 }
 
 #videoStyle {
