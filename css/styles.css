@@ -161,6 +161,10 @@
     }
 }
 
+.mainNavHover {
+    margin-right: 25px;
+}
+
 .mainNavHover:hover {
     background-color: #30427f;
     height: 40px;
