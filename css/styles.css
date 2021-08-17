@@ -20,7 +20,7 @@
 }
 
 #logoBar {
-    height: 110px;
+    height: 100px;
     border-bottom: 1px solid #929BB2;
 }
 
@@ -61,7 +61,7 @@
 
 .TopNavText {
     /* font-family: "Tasse"; */
-    font-size: 130%;
+    font-size: 120%;
 }
 
 .DotDivider {
@@ -75,6 +75,14 @@
 
 .navbar .megamenu {
     padding: 0;
+}
+
+.cutterDropDown {
+    width: 350px;
+    height: 200px;
+    margin-left: 22px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 
@@ -319,4 +327,15 @@
 
 .accessoryItemStyle {
     list-style: none;
+}
+
+.megaMenuBottomRow {
+    border-bottom: 10px solid #323e88;
+}
+
+.rightBorder {
+    border-right: 2px solid #323e88;
+    height: 20px;
+    position: relative;
+    top: 10px;
 }
