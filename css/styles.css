@@ -129,6 +129,8 @@
     background-color: #314084;
     width: 97%;
     margin: 0 auto;
+    margin-top: 3px;
+    height: 32px;
 }
 
 .cutterMenuImg {
@@ -338,4 +340,9 @@
     height: 20px;
     position: relative;
     top: 10px;
+}
+
+.cutterHeadSize {
+    font-size: 123%;
+    margin-top: 3px;
 }
