@@ -146,10 +146,12 @@
     background-color: #D7D9E7;
     width: 90%;
     margin: 0 auto;
+    height: 35px;
 }
 
 .megaMenuSubMenuItem {
     color: #314083 !important;
+    height: 100%;
 }
 
 .megaMenuSubMenuItem:hover {
@@ -189,6 +191,10 @@
     margin: 0;
     padding: 0;
     width: 250px !important;
+}
+
+.dropdown-menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropLeftShow:hover .dropdown-menu {
@@ -288,7 +294,7 @@
     right: 0;
     width: 45%;
     margin-top: 0;
-    margin-left: 6%;
+    margin-left: 21%;
     padding: 0;
     padding-bottom: 15px;
 }
@@ -332,7 +338,9 @@
 }
 
 .megaMenuBottomRow {
-    border-bottom: 10px solid #323e88;
+    background-color: #323e88;
+    height: 8px;
+    width: 100%;
 }
 
 .rightBorder {
