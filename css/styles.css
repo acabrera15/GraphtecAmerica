@@ -104,10 +104,10 @@
     left: 0;
     right: 0;
     width: 45%;
-    margin-top: 0;
-    margin-left: 15%;
     padding: 0;
     padding-bottom: 15px;
+    position: fixed;
+    left: 350px
 }
 
 
@@ -290,13 +290,12 @@
 }
 
 .accessoryMegamenu {
-    left: 0;
+    left: 350px;
     right: 0;
     width: 45%;
-    margin-top: 0;
-    margin-left: 21%;
     padding: 0;
     padding-bottom: 15px;
+    position: fixed;
 }
 
 .accessoryItems {

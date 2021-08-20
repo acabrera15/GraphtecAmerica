@@ -1,17 +1,36 @@
 let dropdownOpen = false;
+const dropdownMenuArray = document.getElementsByClassName("dropdownMenuClose");
+const toCloseMenu = document.getElementsByClassName("toCloseMenu");
+let dropdownArrayNumber = null;
 
+//does not close on logo
 document.getElementById("logoBar").onmouseover = function() {
     if (dropdownOpen) {
-        // document.getElementsByClassName("testing")[0].style.display = "block";
-        document.getElementById("yo").style.display = "block";
+
+        toCloseMenu[dropdownArrayNumber].style.display = "block";
     }
 }
 
-document.getElementsByClassName("testing")[0].onmouseover = function() {
-    dropdownOpen = true;
+//set move over
+for (let i = 0; i < dropdownMenuArray.length; i++) {
+    dropdownMenuArray[i].onmouseover = function() {
+        dropdownOpen = true;
+        dropdownArrayNumber = i;
+    }
 }
 
-document.getElementById("yo").onmouseleave = function() {
+//sets mouse leave
+for (let i = 0; i < toCloseMenu.length; i++) {
+    toCloseMenu[i].onmouseleave = function() {
+        dropdownOpen = false;
+        toCloseMenu[i].style.display = "";
+    }
+}
+
+//closes dropdown if over logo 
+document.getElementById("videoBar").onmouseover = function() {
+    console.log(dropdownOpen);
+    console.log(toCloseMenu[dropdownArrayNumber].style)
     dropdownOpen = false;
-    document.getElementById("yo").style.display = "";
+    toCloseMenu[dropdownArrayNumber].style.display = "";
 }
