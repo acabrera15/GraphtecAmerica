@@ -405,6 +405,7 @@ height: 100%; */
 
 .mobileNav {
     background-color: #323e88;
+    padding-bottom: 0px;
 }
 
 .mobileMainList {
@@ -423,9 +424,14 @@ height: 100%; */
     font-style: normal;
 }
 
+.topItem {
+    border-top: #6E76AB 2px solid;
+}
+
 .mobileFontColor {
     color: #323e88;
     padding-left: 47px !important;
+    font-size: 1.4em;
 }
 
 .mobileSubSubRightCol {
@@ -435,16 +441,20 @@ height: 100%; */
 .mobileSubSubMenuHeader {
     background-color: #323e88;
     font-family: "Tasse";
-    color: white
+    color: white;
+    font-size: 1.4em;
+    padding-left: 14px;
 }
 
 .mobileSubSubText {
     color: #323e88;
     border-bottom: #A1A6C8 2px solid;
+    padding-left: 14px;
 }
 
 .mobileSubSubImage {
     border-top: #A1A6C8 2px solid;
+    padding: 0;
 }
 
 .brandSpacing {
@@ -456,4 +466,9 @@ height: 100%; */
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+
+.mobileCutter {
+    max-width: 150px;
+    max-height: 100px;
 }
