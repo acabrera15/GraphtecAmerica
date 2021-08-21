@@ -3,6 +3,8 @@ const dropdownMenuArray = document.getElementsByClassName("dropdownMenuClose");
 const toCloseMenu = document.getElementsByClassName("toCloseMenu");
 let dropdownArrayNumber = null;
 
+let mobileToggle = false;
+
 //does not close on logo
 document.getElementById("logoBar").onmouseover = function() {
     if (dropdownOpen) {
@@ -37,5 +39,12 @@ function btnToggle() {
 
 document.getElementById("menuIcon").ontouchend = function() {
 
-    document.getElementById('menuIcon').style.backgroundImage = "url('./exitMenu.svg')";
+    if (!mobileToggle) {
+        document.getElementById('menuIcon').style.backgroundImage = "url('./exitMenu.svg')";
+        mobileToggle = true;
+    } else {
+        document.getElementById('menuIcon').style.backgroundImage = "url('./toggler.svg')";
+        mobileToggle = false;
+    }
+
 }
