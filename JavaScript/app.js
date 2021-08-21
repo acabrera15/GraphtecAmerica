@@ -33,8 +33,9 @@ document.getElementById("testing").addEventListener('click', function(event) {
     event.stopPropagation();
 });
 
-function btnToggle() {
-    document.getElementById("yo").classList.toggle("show");
+function btnToggle(e) {
+    const targetID = e.attributes[4].value.substring(1, e.attributes[4].value.length)
+    document.getElementById(targetID).classList.toggle("show");
 }
 
 document.getElementById("menuIcon").ontouchend = function() {
