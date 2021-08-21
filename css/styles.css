@@ -1,355 +1,416 @@
-.mainContainer {
-    max-width: 1700px;
-}
-
-.BoldBlueBackground {
-    background-color: #273063;
-}
-
-.LighterBlueBackground {
-    background-color: #314083;
-}
-
-#TopNavStyle {
-    height: 40px;
-    border-bottom: 1px solid #929BB2;
-}
-
-#topNavContainer {
-    margin-left: 30px;
-}
-
-#logoBar {
-    height: 100px;
-    border-bottom: 1px solid #929BB2;
-}
-
-#mainLogoStyle {
-    margin-left: 40px;
-}
-
-#videoStyle {
-    width: 100%;
-    height: 100%;
-}
-
-#bottomRowStyle {
-    background-color: #314083;
-    color: #ADB2CD;
-}
-
-.TextStyle {
-    font-size: 200%;
-}
-
-@font-face {
-    font-family: "Tasse";
-    src: url("../Tasse-MediumWide.otf");
-}
-
-@font-face {
-    font-family: "Myriad";
-    src: url("../MYRIADPRO-REGULAR.woff");
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Bold'), url('../MYRIADPRO-BOLD.woff') format('woff');
-}
-
-.TopNavText {
-    /* font-family: "Tasse"; */
-    font-size: 120%;
-}
-
-.DotDivider {
-    background-color: #ADB2CD;
-    border-radius: 30%;
-    height: 10px;
-    width: 13px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.navbar .megamenu {
-    padding: 0;
-}
-
-.cutterDropDown {
-    width: 350px;
-    height: 200px;
-    margin-left: 22px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-}
-
-
-/* ============ desktop view ============ */
-
-@media all and (min-width: 992px) {
-    .navbar .has-megamenu {
-        position: static!important;
-    }
-    .navbar .megamenu {
-        left: 0;
-        right: 0;
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
-.has-flyOut {
-    left: 0;
-    right: 0;
-    width: 45%;
-    padding: 0;
-    padding-bottom: 15px;
-    position: fixed;
-    left: 350px
-}
-
-
-/* ============ desktop view .end// ============ */
-
-
-/* ============ mobile view ============ */
-
-@media(max-width: 991px) {
-    .navbar.fixed-top .navbar-collapse,
-    .navbar.sticky-top .navbar-collapse {
-        overflow-y: auto;
-        max-height: 90vh;
-        margin-top: 10px;
-    }
-}
-
-.megamenuColHead {
-    background-color: #314084;
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 3px;
-    height: 32px;
-}
-
-.cutterMenuImg {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.megamenuCol {
-    padding: 0;
-}
-
-.megaMenuSubMenu {
-    background-color: #D7D9E7;
-    width: 90%;
-    margin: 0 auto;
-    height: 35px;
-}
-
-.megaMenuSubMenuItem {
-    color: #314083 !important;
-    height: 100%;
-}
-
-.megaMenuSubMenuItem:hover {
-    background-color: #ECECEC;
-}
-
-
-/* ============ desktop view ============ */
-
-@media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: none;
-    }
-    .navbar .nav-item:hover .megaDrop {
-        display: block;
-    }
-    .navbar .nav-item .dropdown-menu {
-        margin-top: 0;
-    }
-}
-
-.mainNavHover {
-    margin-right: 25px;
-}
-
-.mainNavHover:hover {
-    background-color: #30427f;
-    height: 40px;
-}
-
-.leftDrop {
-    position: absolute;
-    transform: translate3d(-252px, 0px, 0px);
-    top: 0px;
-    left: 0px;
-    will-change: transform;
-    margin: 0;
-    padding: 0;
-    width: 250px !important;
-}
-
-.dropdown-menu {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.dropLeftShow:hover .dropdown-menu {
-    display: block;
-}
-
-.dropLeftShow:hover {
-    background-color: #ECECEC;
-}
-
-.dropLeftShow {
-    font-family: "Myriad";
-}
-
-.MyriadBold {
-    font-family: "Myriad Pro Bold";
-}
-
-.dropLeftHeader {
-    background-color: #323e88;
-    color: #FCFCFC;
-}
-
-.dropdownHeader {
-    color: #323e88;
-    font-size: 25px;
-    font-family: "Tasse";
-    padding: 0;
-    margin: 0;
-    height: 34px;
-    padding-left: 20px;
-}
-
-.dropdownSecondHeader {
-    background-color: #9199c8;
-    width: 100%;
-    margin-left: 0;
-    color: white;
-    padding-left: 20px;
-}
-
-.listStyle {
-    list-style: none;
-}
-
-.listItemStyle::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #323e88;
-    /* Change the color */
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: .4em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */
-}
-
-.listItemStyle {
-    color: #323e88;
-}
-
-.leftdropItemStyle {
-    list-style: none;
-    color: #323e88;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.bulletImageStyle {
-    height: 20px;
-    width: 22px;
-    margin-right: 10px;
-    margin-bottom: 2px;
-}
-
-.flyOutItems {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: "Myriad Pro Bold";
-}
-
-.flyOutItems:hover {
-    background-color: #ECECEC;
-}
-
-.dropdownCol {
-    padding-left: 30px;
-}
-
-.accessoryMegamenu {
-    left: 350px;
-    right: 0;
-    width: 45%;
-    padding: 0;
-    padding-bottom: 15px;
-    position: fixed;
-}
-
-.accessoryItems {
-    margin-left: 22px;
-    width: 80%;
-    font-family: "Myriad Pro Bold";
-}
-
-.accessoryItems:hover {
-    background-color: #ECECEC;
-}
-
-.accessoryDrop {
-    position: absolute;
-    transform: translate3d(-200px, 0px, 0px);
-    top: 0px;
-    left: 0px;
-    will-change: transform;
-    margin: 0;
-    padding: 0;
-    width: 200px !important;
-}
-
-.accessoryItemStyle::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #323e88;
-    /* Change the color */
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: .4em;
-    /* Also needed for space (tweak if needed) */
-}
-
-.accessoryItemStyle {
-    list-style: none;
-}
-
-.megaMenuBottomRow {
-    background-color: #323e88;
-    height: 8px;
-    width: 100%;
-}
-
-.rightBorder {
-    border-right: 2px solid #323e88;
-    height: 20px;
-    position: relative;
-    top: 10px;
-}
-
-.cutterHeadSize {
-    font-size: 123%;
-    margin-top: 3px;
-}
+            .mainContainer {
+                max-width: 1700px;
+            }
+            
+            .BoldBlueBackground {
+                background-color: #273063;
+            }
+            
+            .LighterBlueBackground {
+                background-color: #314083;
+            }
+            
+            #TopNavStyle {
+                height: 40px;
+                border-bottom: 1px solid #929BB2;
+            }
+            
+            #topNavContainer {
+                margin-left: 30px;
+            }
+            
+            #logoBar {
+                height: 100px;
+                border-bottom: 1px solid #929BB2;
+            }
+            
+            #mainLogoStyle {
+                margin-left: 40px;
+            }
+            
+            #videoStyle {
+                width: 100%;
+                height: 100%;
+            }
+            
+            #bottomRowStyle {
+                background-color: #314083;
+                color: #ADB2CD;
+            }
+            
+            .TextStyle {
+                font-size: 200%;
+            }
+            
+            @font-face {
+                font-family: "Tasse";
+                src: url("../Tasse-MediumWide.otf");
+            }
+            
+            @font-face {
+                font-family: "Myriad";
+                src: url("../MYRIADPRO-REGULAR.woff");
+            }
+            
+            @font-face {
+                font-family: 'Myriad Pro Bold';
+                font-style: normal;
+                font-weight: normal;
+                src: local('Myriad Pro Bold'), url('../MYRIADPRO-BOLD.woff') format('woff');
+            }
+            
+            .TopNavText {
+                /* font-family: "Tasse"; */
+                font-size: 120%;
+            }
+            
+            .DotDivider {
+                background-color: #ADB2CD;
+                border-radius: 30%;
+                height: 10px;
+                width: 13px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            
+            .navbar .megamenu {
+                padding: 0;
+            }
+            
+            .cutterDropDown {
+                width: 350px;
+                height: 200px;
+                margin-left: 22px;
+                margin-bottom: 8px;
+                margin-top: 8px;
+            }
+            /* ============ desktop view ============ */
+            
+            @media all and (min-width: 992px) {
+                .navbar .has-megamenu {
+                    position: static!important;
+                }
+                .navbar .megamenu {
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+            
+            .has-flyOut {
+                left: 0;
+                right: 0;
+                width: 49%;
+                padding: 0;
+                padding-bottom: 15px;
+                position: fixed;
+                left: 350px
+            }
+            /* ============ desktop view .end// ============ */
+            /* ============ mobile view ============ */
+            
+            @media(max-width: 991px) {
+                .navbar.fixed-top .navbar-collapse,
+                .navbar.sticky-top .navbar-collapse {
+                    overflow-y: auto;
+                    max-height: 90vh;
+                    margin-top: 10px;
+                }
+            }
+            
+            .megamenuColHead {
+                background-color: #314084;
+                width: 97%;
+                margin: 0 auto;
+                margin-top: 3px;
+                height: 32px;
+            }
+            
+            .cutterMenuImg {
+                width: 90%;
+                margin: 0 auto;
+            }
+            
+            .megamenuCol {
+                padding: 0;
+            }
+            
+            .megaMenuSubMenu {
+                background-color: #D7D9E7;
+                width: 90%;
+                margin: 0 auto;
+                height: 35px;
+            }
+            
+            .megaMenuSubMenuItem {
+                color: #314083 !important;
+                height: 100%;
+            }
+            
+            .megaMenuSubMenuItem:hover {
+                background-color: #ECECEC;
+            }
+            /* ============ desktop view ============ */
+            
+            @media all and (min-width: 992px) {
+                .navbar .nav-item .dropdown-menu {
+                    display: none;
+                }
+                .navbar .nav-item:hover .megaDrop {
+                    display: block;
+                }
+                .navbar .nav-item .dropdown-menu {
+                    margin-top: 0;
+                }
+            }
+            
+            .mainNavHover {
+                margin-right: 25px;
+            }
+            
+            .mainNavHover:hover {
+                background-color: #30427f;
+                height: 40px;
+            }
+            
+            .leftDrop {
+                position: absolute;
+                transform: translate3d(-252px, 0px, 0px);
+                top: 0px;
+                left: 0px;
+                will-change: transform;
+                margin: 0;
+                padding: 0;
+                width: 250px !important;
+            }
+            
+            .dropdown-menu {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            .dropLeftShow:hover .dropdown-menu {
+                display: block;
+            }
+            
+            .dropLeftShow:hover {
+                background-color: #ECECEC;
+            }
+            
+            .dropLeftShow {
+                font-family: "Myriad";
+            }
+            
+            .MyriadBold {
+                font-family: "Myriad Pro Bold";
+            }
+            
+            .dropLeftHeader {
+                background-color: #323e88;
+                color: #FCFCFC;
+            }
+            
+            .dropdownHeader {
+                color: #323e88;
+                font-size: 25px;
+                font-family: "Tasse";
+                padding: 0;
+                margin: 0;
+                height: 34px;
+                padding-left: 20px;
+            }
+            
+            .dropdownSecondHeader {
+                background-color: #9199c8;
+                width: 100%;
+                margin-left: 0;
+                color: white;
+                padding-left: 20px;
+            }
+            
+            .listStyle {
+                list-style: none;
+            }
+            
+            .listItemStyle::before {
+                content: "\2022";
+                /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: #323e88;
+                /* Change the color */
+                font-weight: bold;
+                /* If you want it to be bold */
+                display: inline-block;
+                /* Needed to add space between the bullet and the text */
+                width: .4em;
+                /* Also needed for space (tweak if needed) */
+                margin-left: -1em;
+                /* Also needed for space (tweak if needed) */
+            }
+            
+            .listItemStyle {
+                color: #323e88;
+            }
+            
+            .leftdropItemStyle {
+                list-style: none;
+                color: #323e88;
+                margin-bottom: 20px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            
+            .bulletImageStyle {
+                height: 20px;
+                width: 22px;
+                margin-right: 10px;
+                margin-bottom: 2px;
+            }
+            
+            .flyOutItems {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Myriad Pro Bold";
+            }
+            
+            .flyOutItems:hover {
+                background-color: #ECECEC;
+            }
+            
+            .dropdownCol {
+                padding-left: 30px;
+            }
+            
+            .accessoryMegamenu {
+                left: 350px;
+                right: 0;
+                width: 49%;
+                padding: 0;
+                padding-bottom: 15px;
+                position: fixed;
+            }
+            
+            .accessoryItems {
+                margin-left: 22px;
+                width: 80%;
+                font-family: "Myriad Pro Bold";
+            }
+            
+            .accessoryItems:hover {
+                background-color: #ECECEC;
+            }
+            
+            .accessoryDrop {
+                position: absolute;
+                transform: translate3d(-200px, 0px, 0px);
+                top: 0px;
+                left: 0px;
+                will-change: transform;
+                margin: 0;
+                padding: 0;
+                width: 200px !important;
+            }
+            
+            .accessoryItemStyle::before {
+                content: "\2022";
+                /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: #323e88;
+                /* Change the color */
+                font-weight: bold;
+                /* If you want it to be bold */
+                display: inline-block;
+                /* Needed to add space between the bullet and the text */
+                width: .4em;
+                /* Also needed for space (tweak if needed) */
+            }
+            
+            .accessoryItemStyle {
+                list-style: none;
+            }
+            
+            .megaMenuBottomRow {
+                background-color: #323e88;
+                height: 8px;
+                width: 100%;
+            }
+            
+            .rightBorder {
+                border-right: 2px solid #323e88;
+                height: 20px;
+                position: relative;
+                top: 10px;
+            }
+            
+            .cutterHeadSize {
+                font-size: 123%;
+                margin-top: 3px;
+            }
+            
+            .mobileShow {
+                display: none;
+            }
+            /* Smartphone Portrait and Landscape */
+            
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                .mobileShow {
+                    display: inline;
+                }
+            }
+            
+            .mobileHide {}
+            /* Smartphone Portrait and Landscape */
+            
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                .mobileHide {
+                    display: none;
+                }
+            }
+            
+            .custom-toggler.navbar-toggler {
+                border: none;
+                padding: 0;
+                height: 40px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            
+            .custom-toggler .navbar-toggler-icon {
+                background-image: url("../toggler.svg");
+                /* width: 100%;
+    height: 100%; */
+                background-position: center;
+                /* Center the image */
+                background-repeat: no-repeat;
+                /* Do not repeat the image */
+                background-size: cover;
+                /* Resize the background image to cover the entire container */
+            }
+            
+            .navbar-toggler-icon {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .mobileNav {
+                background-color: #323e88;
+            }
+            
+            .mobileMainList {
+                background-color: white;
+                border-bottom: #A1A6C8 2px solid;
+                font-family: myriad-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            
+            .mobileInnerlist {
+                background-color: #D0D2E3;
+                border-bottom: #6E76AB 2px solid;
+                font-family: myriad-pro, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+            
+            .mobileFontColor {
+                color: #323e88;
+            }

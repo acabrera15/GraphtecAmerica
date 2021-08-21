@@ -27,10 +27,10 @@ for (let i = 0; i < toCloseMenu.length; i++) {
     }
 }
 
-//closes dropdown if over logo 
-document.getElementById("videoBar").onmouseover = function() {
-    console.log(dropdownOpen);
-    console.log(toCloseMenu[dropdownArrayNumber].style)
-    dropdownOpen = false;
-    toCloseMenu[dropdownArrayNumber].style.display = "";
+document.getElementById("testing").addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
+function btnToggle() {
+    document.getElementById("yo").classList.toggle("show");
 }

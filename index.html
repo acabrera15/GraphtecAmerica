@@ -9,13 +9,13 @@
 
     <!--Bootstap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.typekit.net/avs4suq.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
-    <div class="container-fluid mainContainer">
+    <div class="container-fluid mainContainer mobileHide">
 
 
         <!--Top menu Nav-->
@@ -1422,6 +1422,120 @@
         <div class="container-fluid">
             <img src="./customers.png" alt="" class="img-fluid">
         </div>
+    </div>
+
+
+
+    <!-- mobile portion -->
+    <div class="mobileShow">
+        <nav class="navbar navbar-expand-lg mobileNav">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto w-50" href="#">
+                <img src="./MobileLogo.png" class="img-fluid" alt="Responsive image">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item mobileMainList" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#testing" aria-controls="testing" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="nav-link mobileFontColor" href="#">CUTTERS</a>
+                        <div class="collapse navbar-collapse" id="testing">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item" class="navbar-toggler" onclick="btnToggle()" type="button" data-toggle="collapse" data-target="#yo" aria-controls="yo" aria-expanded="false" aria-label="Toggle navigation">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">ROLL FED CUTTERS</a>
+                                    <div class="collapse navbar-collapse" id="yo">
+                                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                            <li class="nav-item">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="https://pbs.twimg.com/profile_images/867398998767919104/QjXS9vw-_400x400.jpg" width="30px" height="20px" />
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="row">FC9000 SERIES</div>
+                                                        <div class="row">HIGHLIGHTS</div>
+                                                        <div class="row">APPLICATIONS</div>
+                                                        <div class="row">ACCESSORIES</div>
+                                                        <div class="row"></div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">FLATBED CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">DESKTOP CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">LABEL FINISHING SYSTEMS</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobileMainList" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#testing1" aria-controls="testing1" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="nav-link mobileFontColor" href="#">ACCESSORIES</a>
+                        <div class="collapse navbar-collapse" id="testing1">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">ROLL FED CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">FLATBED CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">DESKTOP CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">LABEL FINISHING SYSTEMS</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobileMainList" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#testing2" aria-controls="testing2" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="nav-link mobileFontColor" href="#">SUPPORT</a>
+                        <div class="collapse navbar-collapse" id="testing2">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">ROLL FED CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">FLATBED CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">DESKTOP CUTTERS</a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mobileFontColor mobileInnerlist" href="#">LABEL FINISHING SYSTEMS</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobileMainList dropdown" id="myDropdown">
+                        <a class="nav-link mobileFontColor dropdown-toggle" data-bs-toggle="dropdown" href="#">REGISTER</a>
+                    </li>
+                    <li class="nav-item mobileMainList">
+                        <a class="nav-link mobileFontColor" href="#">LOCATE</a>
+                    </li>
+                    <li class="nav-item mobileMainList">
+                        <a class="nav-link mobileFontColor" href="#">COMPANY</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <!--Bootstrap JS-->
