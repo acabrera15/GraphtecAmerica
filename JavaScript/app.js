@@ -34,7 +34,7 @@ function dontCollapse(e) {
 }
 
 function btnToggle(e) {
-    const targetID = e.attributes[4].value.substring(1, e.attributes[4].value.length)
+    const targetID = e.attributes[4].value
     document.getElementById(targetID).classList.toggle("show");
 }
 
