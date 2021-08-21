@@ -29,9 +29,9 @@ for (let i = 0; i < toCloseMenu.length; i++) {
     }
 }
 
-document.getElementById("testing").addEventListener('click', function(event) {
-    event.stopPropagation();
-});
+function dontCollapse(e) {
+    e.stopPropagation();
+}
 
 function btnToggle(e) {
     const targetID = e.attributes[4].value.substring(1, e.attributes[4].value.length)
