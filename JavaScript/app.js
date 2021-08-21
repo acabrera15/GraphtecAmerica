@@ -34,3 +34,8 @@ document.getElementById("testing").addEventListener('click', function(event) {
 function btnToggle() {
     document.getElementById("yo").classList.toggle("show");
 }
+
+document.getElementById("menuIcon").ontouchend = function() {
+
+    document.getElementById('menuIcon').style.backgroundImage = "url('./exitMenu.svg')";
+}
