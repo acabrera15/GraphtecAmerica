@@ -45,7 +45,8 @@ function btnToggle(e) {
 }
 
 //changes the menu Icon to a close Icon
-document.getElementById("menuIcon").ontouchend = function() {
+document.getElementById("menuIcon").ontouchstart = function() {
+
 
     if (!mobileToggle) {
         document.getElementById('menuIcon').style.backgroundImage = "url('./exitMenu.svg')";
@@ -54,6 +55,25 @@ document.getElementById("menuIcon").ontouchend = function() {
         document.getElementById('menuIcon').style.backgroundImage = "url('./toggler.svg')";
         mobileToggle = false;
     }
+
+}
+
+const closeItems = function() {
+    console.log('fjdklfjld;safkdsjafads', openDropdowns)
+
+    if (openDropdowns.length > 0) {
+        const len = openDropdowns.length;
+        console.log('yesdfd')
+        for (let i = len - 1; i >= 0; i--) {
+            console.log('yee', openDropdowns)
+            const toCollapse = document.getElementById(openDropdowns[i]).getAttribute("aria-controls");
+            console.log(toCollapse)
+            document.getElementById(toCollapse).classList.toggle("show");
+            console.log(toCollapse)
+
+            openDropdowns.pop(i);
+        }
+    };
 
 }
 
