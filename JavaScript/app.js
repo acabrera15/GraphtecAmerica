@@ -2,6 +2,7 @@ let dropdownOpen = false;
 const dropdownMenuArray = document.getElementsByClassName("dropdownMenuClose");
 const toCloseMenu = document.getElementsByClassName("toCloseMenu");
 let dropdownArrayNumber = null;
+let openDropdowns = [];
 
 let mobileToggle = false;
 
@@ -29,15 +30,21 @@ for (let i = 0; i < toCloseMenu.length; i++) {
     }
 }
 
+//prevents the default toggle
+
 function dontCollapse(e) {
     e.stopPropagation();
 }
 
+
+//shows the dropdown to toggle
 function btnToggle(e) {
     const targetID = e.attributes[4].value
+    console.log(e.attributes)
     document.getElementById(targetID).classList.toggle("show");
 }
 
+//changes the menu Icon to a close Icon
 document.getElementById("menuIcon").ontouchend = function() {
 
     if (!mobileToggle) {
@@ -46,6 +53,70 @@ document.getElementById("menuIcon").ontouchend = function() {
     } else {
         document.getElementById('menuIcon').style.backgroundImage = "url('./toggler.svg')";
         mobileToggle = false;
+    }
+
+}
+
+const closeOtherDropdowns = function(e) {
+    const divID = e.getAttribute("id");
+    console.log("fdfa", divID)
+
+    if (divID.substring(0, divID.length - 1) === "upper") {
+        console.log("openDropdowns", openDropdowns);
+
+        if (openDropdowns[1]) {
+            const toCollapse = document.getElementById(openDropdowns[1]).getAttribute("aria-controls");
+            document.getElementById(toCollapse).classList.toggle("show");
+            openDropdowns.pop(1)
+        }
+
+        if (openDropdowns.length > 0) {
+            if (openDropdowns[0] !== divID) {
+                console.log('yee2')
+                openDropdowns.forEach(dropdown => {
+                    const toCollapse = document.getElementById(dropdown).getAttribute("aria-controls");
+                    console.log(toCollapse)
+                    console.log(document.getElementById(toCollapse).classList)
+                    document.getElementById(toCollapse).classList.toggle("show");
+                    openDropdowns[0] = divID;
+                });
+            } else {
+                console.log('yee')
+
+                openDropdowns.pop(0);
+            }
+
+        } else {
+            openDropdowns.push(divID.substring(0, divID.length));
+            console.log('yess ', openDropdowns)
+        }
+
+        //mid
+    } else if (divID.substring(0, divID.length - 1) === 'mid') {
+        console.log("opendropMid", openDropdowns);
+
+        if (openDropdowns.length !== 1) {
+            console.log("not one")
+
+
+            if (divID !== openDropdowns[1]) {
+                for (i = 1; i < openDropdowns.length; i++) {
+                    const toCollapse = document.getElementById(openDropdowns[i]).getAttribute("aria-controls");
+                    console.log(toCollapse)
+                    console.log(document.getElementById(toCollapse).classList)
+                    document.getElementById(toCollapse).classList.toggle("show");
+                    openDropdowns[1] = (divID.substring(0, divID.length));
+                }
+            } else {
+                openDropdowns.pop(1)
+            }
+
+        } else {
+            openDropdowns.push(divID.substring(0, divID.length));
+            console.log('up')
+        }
+    } else {
+        console.log('yp')
     }
 
 }

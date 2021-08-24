@@ -1449,13 +1449,13 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item mobileMainList" class="navbar-toggler" data-toggle="collapse" data-target="#testing" aria-controls="testing" aria-expanded="false" aria-label="Toggle navigation">
+                        <li class="nav-item mobileMainList" class="navbar-toggler" onclick="closeOtherDropdowns(this)" data-toggle="collapse" id="upper1" data-target="#testing" aria-controls="testing" aria-expanded="false" aria-label="Toggle navigation">
                             <a class="nav-link mobileFontColor" href="#">CUTTERS</a>
                             <div class="collapse navbar-collapse" onclick="dontCollapse(event)" id="testing">
                                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" data-toggle="collapse" data-target="#yo" aria-controls="yo" aria-expanded="false" aria-label="Toggle navigation">
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle1" aria-controls="middle1" aria-expanded="false" aria-label="Toggle navigation" id="mid1">
                                         <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">ROLL FED CUTTERS</a>
-                                        <div class="collapse navbar-collapse" id="yo">
+                                        <div class="collapse navbar-collapse" id="middle1">
                                             <ul class="navbar-nav mr-auto mt-lg-0">
                                                 <li class="nav-item">
                                                     <div class="row">
@@ -1486,9 +1486,9 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" data-toggle="collapse" data-target="#col2" aria-controls="col2" aria-expanded="false" aria-label="Toggle navigation">
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle2" aria-controls="middle2" aria-expanded="false" aria-label="Toggle navigation" id="mid2">
                                         <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">FLATBED CUTTERS</a>
-                                        <div class="collapse navbar-collapse" id="col2">
+                                        <div class="collapse navbar-collapse" id="middle2">
                                             <ul class="navbar-nav mr-auto mt-lg-0">
                                                 <li class="nav-item">
                                                     <div class="row">
@@ -1519,9 +1519,9 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" data-toggle="collapse" data-target="#col3" aria-controls="col3" aria-expanded="false" aria-label="Toggle navigation">
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle3" aria-controls="middle3" aria-expanded="false" aria-label="Toggle navigation" id="mid3">
                                         <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">DESKTOP CUTTERS</a>
-                                        <div class="collapse navbar-collapse" id="col3">
+                                        <div class="collapse navbar-collapse" id="middle3">
                                             <ul class="navbar-nav mr-auto mt-lg-0">
                                                 <li class="nav-item">
                                                     <div class="row">
@@ -1552,9 +1552,9 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" data-toggle="collapse" data-target="#col4" aria-controls="col4" aria-expanded="false" aria-label="Toggle navigation">
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle4" aria-controls="middle4" aria-expanded="false" aria-label="Toggle navigation" id="mid4">
                                         <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">LABEL FINISHING SYSTEMS</a>
-                                        <div class="collapse navbar-collapse" id="col4">
+                                        <div class="collapse navbar-collapse" id="middle4">
                                             <ul class="navbar-nav mr-auto mt-lg-0">
                                                 <li class="nav-item">
                                                     <div class="row">
@@ -1588,11 +1588,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item mobileMainList" class="navbar-toggler" data-toggle="collapse" data-target="#testing1" aria-controls="testing1" aria-expanded="false" aria-label="Toggle navigation">
+                        <li class="nav-item mobileMainList" class="navbar-toggler" onclick="closeOtherDropdowns(this)" data-toggle="collapse" id="upper2" data-target="#testing1" aria-controls="testing1" aria-expanded="false" aria-label="Toggle navigation">
                             <a class="nav-link mobileFontColor" href="#">ACCESSORIES</a>
                             <div class="collapse navbar-collapse" onclick="dontCollapse(event)" id="testing1">
                                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" data-toggle="collapse" data-target="#testing4" aria-controls="testing4" aria-expanded="false" aria-label="Toggle navigation">
+                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="testing4" aria-controls="testing4" aria-expanded="false" aria-label="Toggle navigation" id="mid6">
                                         <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">CURRENT MODEL SERIES</a>
                                         <div class="collapse navbar-collapse" id="testing4">
                                             <ul class="navbar-nav mr-auto mt-lg-0">
