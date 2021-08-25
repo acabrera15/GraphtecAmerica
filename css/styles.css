@@ -396,11 +396,12 @@ height: 100%; */
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
+    padding: 15px;
 }
 
 .navbar-toggler-icon {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .mobileNav {
