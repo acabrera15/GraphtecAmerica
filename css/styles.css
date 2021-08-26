@@ -361,7 +361,7 @@
 
 /* Smartphone Portrait and Landscape */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
     .mobileShow {
         display: inline;
     }
@@ -372,7 +372,7 @@
 
 /* Smartphone Portrait and Landscape */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
     .mobileHide {
         display: none;
     }
@@ -470,8 +470,8 @@ height: 100%; */
     color: #323e88;
     border-bottom: #A1A6C8 2px solid;
     padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    padding-top: .2em;
+    /* padding-bottom: 1px; */
     height: 100%;
 }
 
