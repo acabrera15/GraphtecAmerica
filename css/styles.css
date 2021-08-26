@@ -441,7 +441,6 @@ height: 100%; */
 }
 
 .mobileSubSubRightCol {
-    border-left: #A1A6C8 2px solid;
     border-top: #A1A6C8 2px solid;
     width: 100%;
     padding: 0;
@@ -451,6 +450,7 @@ height: 100%; */
 .mobileSubSubMenuHeader {
     width: 100%;
     margin: 0;
+    height: 100%;
     /* background-color: #323e88;
     font-family: "Tasse";
     color: white;
@@ -463,7 +463,6 @@ height: 100%; */
     height: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 1px;
 }
 
 .mobileSubSubText {
@@ -472,10 +471,14 @@ height: 100%; */
     padding-left: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
+    height: 100%;
 }
 
 .mobileSubSubImage {
     padding: 0;
+    height: 100%;
+    width: 100%;
+    border-right: #A1A6C8 2px solid;
 }
 
 .brandSpacing {
