@@ -425,10 +425,11 @@ height: 100%; */
     font-style: normal;
 }
 
-.mobileInnerlist:focus {
+
+/* .mobileInnerlist:focus {
     color: #FFFFFF;
     background-color: #6f77A9;
-}
+} */
 
 .topItem {
     border-top: #6E76AB 2px solid;

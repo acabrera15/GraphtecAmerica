@@ -3,6 +3,7 @@ const dropdownMenuArray = document.getElementsByClassName("dropdownMenuClose");
 const toCloseMenu = document.getElementsByClassName("toCloseMenu");
 let dropdownArrayNumber = null;
 let openDropdowns = [];
+let highlightedItem = "";
 
 let mobileToggle = false;
 
@@ -79,7 +80,11 @@ const closeItems = function() {
 
 const closeOtherDropdowns = function(e) {
     const divID = e.getAttribute("id");
-    document.getElementById(divID).focus();
+
+    if (highlightedItem) {
+        document.getElementById(highlightedItem).style.backgroundColor = "#D0D2E1";
+        document.getElementById(highlightedItem).style.color = "#314083"
+    }
 
 
 
@@ -115,7 +120,12 @@ const closeOtherDropdowns = function(e) {
 
         //mid
     } else if (divID.substring(0, divID.length - 1) === 'mid') {
-        console.log("opendropMid", openDropdowns);
+        console.log("opendropMid", divID);
+        highlightedItem = (divID + "Label");
+
+        document.getElementById((divID + "Label")).style.backgroundColor = "#6f77A9"
+        document.getElementById((divID + "Label")).style.color = "#FFFFFF"
+
 
         if (openDropdowns.length !== 1) {
             console.log("not one")
