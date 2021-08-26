@@ -79,7 +79,9 @@ const closeItems = function() {
 
 const closeOtherDropdowns = function(e) {
     const divID = e.getAttribute("id");
-    console.log("fdfa", divID)
+    document.getElementById(divID).focus();
+
+
 
     if (divID.substring(0, divID.length - 1) === "upper") {
         console.log("openDropdowns", openDropdowns);
@@ -138,5 +140,4 @@ const closeOtherDropdowns = function(e) {
     } else {
         console.log('yp')
     }
-
 }
