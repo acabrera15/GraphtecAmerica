@@ -7,6 +7,8 @@ let highlightedItem = "";
 
 let mobileToggle = false;
 
+let sideDropExpanded = false;
+
 //does not close on logo
 document.getElementById("logoBar").onmouseover = function() {
     if (dropdownOpen) {
