@@ -184,7 +184,7 @@
 
 .leftDrop {
     position: absolute;
-    transform: translate3d(-252px, 0px, 0px);
+    transform: translate3d(-210px, 0px, 0px);
     top: 0px;
     left: 0px;
     will-change: transform;
