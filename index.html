@@ -19,7 +19,7 @@
 
 
         <!--Top menu Nav-->
-        <nav class="navbar navbar-expand-lg navbar-light BoldBlueBackground" id="TopNavStyle">
+        <nav class="navbar navbar-expand-lg navbar-light BoldBlueBackground smallScreenHide" id="TopNavStyle">
             <div class="container-fluid" id="topNavContainer">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -1371,8 +1371,217 @@
             </div>
         </nav>
 
+
+
+
+        <!-- small portion -->
+        <div class="smallScreenShow">
+            <nav class="navbar navbar-expand-lg mobileNav">
+                <button class="navbar-toggler custom-toggler" onclick="closeItems()" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="menuIcon"></span>
+                </button>
+                <a class="navbar-brand w-50 brandSpacing" href="#">
+                    <img src="./MobileLogo.png" class="img-fluid" alt="Responsive image">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item mobileMainList" class="navbar-toggler" onclick="closeOtherDropdowns(this)" data-toggle="collapse" id="upper1" data-target="#testing" aria-controls="testing" aria-expanded="false" aria-label="Toggle navigation">
+                            <a class="nav-link mobileFontColor" href="#">CUTTERS</a>
+                            <div class="collapse navbar-collapse" onclick="dontCollapse(event)" id="testing">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle1" aria-controls="middle1" aria-expanded="false" aria-label="Toggle navigation" id="mid1">
+                                        <a class="nav-link mobileFontColor mobileInnerlist topItem" id="mid1Label" href="#">ROLL FED CUTTERS</a>
+                                        <div class="collapse navbar-collapse" id="middle1">
+                                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                                <li class="nav-item">
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/FC9000-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/FC9000 SERIES.png" style="padding: 0" /></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/CE7000-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol" style="border-top: none !important;">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/CE7000 SERIES.png" style="padding: 0;"></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle2" aria-controls="middle2" aria-expanded="false
+                                                           " aria-label="Toggle navigation" id="mid2">
+                                        <a class="nav-link mobileFontColor mobileInnerlist topItem" id="mid2Label" href="#">FLATBED CUTTERS</a>
+                                        <div class="collapse navbar-collapse" id="middle2">
+                                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                                <li class="nav-item">
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/FCX2000-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/FCX2000 SERIES.png" style="padding: 0" /></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/FCX4000-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol" style="border-top: none !important;">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/FCX4000 SERIES.png" style="padding: 0" /></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle3" aria-controls="middle3" aria-expanded="false
+                                                           " aria-label="Toggle navigation" id="mid3">
+                                        <a class="nav-link mobileFontColor mobileInnerlist topItem" id="mid3Label" href="#">DESKTOP CUTTERS</a>
+                                        <div class="collapse navbar-collapse" id="middle3">
+                                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                                <li class="nav-item">
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/F-Mark2-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/F-MARK2.png" style="padding: 0" /></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/CE7000-40-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol" style="border-top: none !important;">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/CE7000-40.png" style="padding: 0;"></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" class="navbar-toggler" ontouchend="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="middle4" aria-controls="middle4" aria-expanded="false
+                                                           " aria-label="Toggle navigation" id="mid4">
+                                        <a class="nav-link mobileFontColor mobileInnerlist topItem" id="mid4Label" href="#">LABEL FINISHING SYSTEMS</a>
+                                        <div class="collapse navbar-collapse" id="middle4">
+                                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                                <li class="nav-item">
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/LCX-603-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/LCX603.png" style="padding: 0" /></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row subRowSizing">
+                                                        <div class="col mobileSubSubImage mx-auto d-block">
+                                                            <img src="./assets/images/mobile/Mobile Models/DLC1000-Mobile.png" class="mobileCutter mx-auto d-block" />
+                                                        </div>
+                                                        <div class="col mobileSubSubRightCol" style="border-top: none !important;">
+                                                            <div class="row g-0 mobileSubSubMenuHeader"><img src="./assets/images/mobile/Mobile Titles/DLC1000.png" style="padding: 0;"></div>
+                                                            <div class="row g-0 mobileSubSubText">HIGHLIGHTS</div>
+                                                            <div class="row g-0 mobileSubSubText">APPLICATIONS</div>
+                                                            <div class="row g-0 mobileSubSubText" style="border-bottom: none !important;">ACCESSORIES</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mobileMainList" class="navbar-toggler" onclick="closeOtherDropdowns(this)" data-toggle="collapse" id="upper2" data-target="#testing1" aria-controls="testing1" aria-expanded="false" aria-label="Toggle
+                                                            navigation">
+                            <a class="nav-link mobileFontColor" href="#">ACCESSORIES</a>
+                            <div class="collapse navbar-collapse" onclick="dontCollapse(event)" id="testing1">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item" class="navbar-toggler" onclick="btnToggle(this)" ontouchstart="closeOtherDropdowns(this)" data-toggle="collapse" data-target="testing4" aria-controls="testing4" aria-expanded="false
+                                                           " aria-label="Toggle navigation" id="mid6">
+                                        <a class="nav-link mobileFontColor mobileInnerlist topItem" href="#">CURRENT MODEL SERIES</a>
+                                        <div class="collapse navbar-collapse" id="testing4">
+                                            <ul class="navbar-nav mr-auto mt-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">FC9000 SERIES</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">CE7000 SERIES</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">FCX2000 SERIES</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">FCX4000 SERIES</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">F-MARK2</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">LCX603</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link mobileFontColor innerAccessoryItems mobileInnerItemStyle" href="#">DLC1000 SERIES</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mobileFontColor mobileInnerlist" style="border-top: 2px solid #A1A6C8;" href="#">LEGACY MODEL SERIES</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mobileMainList">
+                            <a class="nav-link mobileFontColor" href="#">SUPPORT</a>
+                        </li>
+                        <li class="nav-item mobileMainList">
+                            <a class="nav-link mobileFontColor">REGISTER</a>
+                        </li>
+                        <li class="nav-item mobileMainList">
+                            <a class="nav-link mobileFontColor" href="#">LOCATE</a>
+                        </li>
+                        <li class="nav-item mobileMainList">
+                            <a class="nav-link mobileFontColor" href="#">COMPANY</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
         <!--logo Bar-->
-        <div class="container-fluid" id="logoBar">
+        <div class="container-fluid smallScreenHide" id="logoBar">
             <div class="row LighterBlueBackground" id="logoBar">
                 <div class="col" id="mainLogoStyle">
                     <img src="./Graphtec White.png" class="img-fluid pt-3" alt="Responsive image" style="width:280px">
@@ -1394,7 +1603,7 @@
         <!-- bottom  Bar -->
         <div class="container-fluid" id="bottomRowStyle">
             <div class="row">
-                <div class="col-1"></div>
+                <div class="col-1 bottomDiv"></div>
                 <div class="col">
                     <div class="row">
                         <div class="d-inline TextStyle col text-center">Roll Fed Cutters</div>
@@ -1413,7 +1622,7 @@
                     </div>
 
                 </div>
-                <div class="col-1"></div>
+                <div class="col-1 bottomDiv"></div>
             </div>
 
 
