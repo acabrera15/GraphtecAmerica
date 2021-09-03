@@ -42,8 +42,11 @@ function dontCollapse(e) {
 
 //shows the dropdown to toggle
 function btnToggle(e) {
-    const targetID = e.attributes[4].value
-    console.log(e.attributes)
+
+    console.log()
+
+    const targetID = e.attributes["data-target"].value
+
     document.getElementById(targetID).classList.toggle("show");
 }
 
@@ -82,6 +85,7 @@ const closeItems = function() {
 
 const closeOtherDropdowns = function(e) {
     const divID = e.getAttribute("id");
+    console.log('here', divID)
 
     if (highlightedItem) {
         document.getElementById(highlightedItem).style.backgroundColor = "#D0D2E1";
@@ -150,6 +154,11 @@ const closeOtherDropdowns = function(e) {
             console.log('up')
         }
     } else {
-        console.log('yp')
+        console.log(divID)
     }
+}
+
+const smallViewClick = function(e) {
+    closeOtherDropdowns(e);
+    btnToggle(e);
 }

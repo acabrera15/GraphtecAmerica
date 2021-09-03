@@ -483,34 +483,10 @@
 }
 
 
-/* .smallScreenShow {
-    display: none;
-} */
-
-
-/* Smartphone Portrait and Landscape */
-
-
-/* @media (min-width: 320px) and (max-width: 990px) {
-    .smallScreenShow {
-        display: inline;
-        height: 100%;
-    }
-} */
-
-
 /* .mobileHide {} */
 
 
 /* Smartphone Portrait and Landscape */
-
-
-/* 
-@media (min-width: 320px) and (max-width: 990px) {
-    .smallScreenHide {
-        display: none;
-    }
-} */
 
 .mobileShow {
     display: none;
@@ -698,4 +674,27 @@
 
 body {
     height: 100vh;
+}
+
+
+/* Smalll screen devices  */
+
+.smallScreenShow {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+    .smallScreenShow {
+        display: inline;
+        height: 100%;
+    }
+    .smallScreenHide {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+    .smallScreenHide {
+        display: none;
+    }
 }
