@@ -483,13 +483,11 @@
 }
 
 
-/* .mobileHide {} */
-
-
 /* Smartphone Portrait and Landscape */
 
 .mobileShow {
     display: none;
+    padding: 0;
 }
 
 
@@ -662,12 +660,6 @@
 
 .mobileScreenStyle {
     padding: 0;
-    background-image: url("../back.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
     /* Resize the background image to cover the entire container */
     /* Center the image */
 }

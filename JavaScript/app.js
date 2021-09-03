@@ -162,3 +162,7 @@ const smallViewClick = function(e) {
     closeOtherDropdowns(e);
     btnToggle(e);
 }
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById('mobile').style = "background-image: url('./back.png');  background-repeat: no-repeat;  background-position: center;  background-size: cover; height: 100%;  width: 100%; "
+}
