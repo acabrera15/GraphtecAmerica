@@ -157,12 +157,6 @@
     left: 350px
 }
 
-
-/* ============ desktop view .end// ============ */
-
-
-/* ============ mobile view ============ */
-
 @media(max-width: 991px) {
     .navbar.fixed-top .navbar-collapse,
     .navbar.sticky-top .navbar-collapse {
@@ -346,13 +340,10 @@
 }
 
 .dropdownHeader {
-    color: #323e88;
-    font-size: 25px;
-    font-family: "Tasse";
     padding: 0;
     margin: 0;
-    height: 30px;
-    width: 200px;
+    height: 55px;
+    width: 350px;
     padding-left: 20px;
 }
 
@@ -481,6 +472,10 @@
     font-size: 123%;
     margin-top: 3px;
 }
+
+
+/* mobile styles
+ */
 
 
 /* Smartphone Portrait and Landscape */
