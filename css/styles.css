@@ -188,13 +188,19 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 35px;
+        height: 27px;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 10px;
+        top: 4px;
+    }
+    .megaMenuSubMenuItem {
+        color: #314083 !important;
+        height: 100%;
+        position: relative;
+        bottom: 5px
     }
 }
 
@@ -203,14 +209,20 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 35px;
+        height: 27px;
         font-size: 90%;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 8px;
+        top: 4px;
+    }
+    .megaMenuSubMenuItem {
+        color: #314083 !important;
+        height: 100%;
+        position: relative;
+        bottom: 3px
     }
 }
 
@@ -219,23 +231,29 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 35px;
+        height: 25px;
         font-size: 80%;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 7px;
+        top: 3px;
+    }
+    .megaMenuSubMenuItem {
+        color: #314083 !important;
+        height: 100%;
+        position: relative;
+        bottom: 4px;
     }
 }
 
-@media (max-width: 1187px) and (min-width: 1076px) {
+@media (max-width: 1188px) and (min-width: 1076px) {
     .megaMenuSubMenu {
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 35px;
+        height: 25px;
         font-size: 70%;
         padding-top: 3px;
     }
@@ -243,7 +261,13 @@
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 5px;
+        top: 0px;
+    }
+    .megaMenuSubMenuItem {
+        color: #314083 !important;
+        height: 100%;
+        position: relative;
+        bottom: 4px;
     }
 }
 
@@ -252,7 +276,7 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 35px;
+        height: 24px;
         font-size: 65%;
         padding-top: 3px;
     }
@@ -260,7 +284,13 @@
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 5px;
+        top: -1px;
+    }
+    .megaMenuSubMenuItem {
+        color: #314083 !important;
+        height: 100%;
+        position: relative;
+        bottom: 5px;
     }
 }
 
@@ -268,11 +298,6 @@
     .brandSpacing {
         margin-right: 20% !important;
     }
-}
-
-.megaMenuSubMenuItem {
-    color: #314083 !important;
-    height: 100%;
 }
 
 .megaMenuSubMenuItem:hover {
