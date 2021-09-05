@@ -305,7 +305,7 @@
 
 .leftDrop {
     position: absolute;
-    transform: translate3d(-210px, 0px, 0px);
+    transform: translate3d(-224px, 0px, 0px);
     top: 0px;
     left: 0px;
     will-change: transform;
@@ -337,6 +337,7 @@
 .dropLeftHeader {
     background-color: #323e88;
     color: #FCFCFC;
+    padding-top: 2px;
 }
 
 .dropdownHeader {
@@ -416,6 +417,8 @@
 
 #supportDropdown {
     width: 725px;
+    position: fixed;
+    left: 350px
 }
 
 #supportSecondCol {
@@ -448,7 +451,7 @@
 
 .accessoryDrop {
     position: absolute;
-    transform: translate3d(-172px, 0px, 0px);
+    transform: translate3d(-175px, 0px, 0px);
     top: 0px;
     left: 0px;
     will-change: transform;
