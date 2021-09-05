@@ -4,6 +4,12 @@ const toCloseMenu = document.getElementsByClassName("toCloseMenu");
 let dropdownArrayNumber = null;
 let openDropdowns = [];
 let highlightedItem = "";
+var appended = false;
+
+//for resize
+let intViewportWidth = window.innerWidth;
+const widthOutput = document.querySelector('#width');
+
 
 let mobileToggle = false;
 
@@ -166,3 +172,76 @@ const smallViewClick = function(e) {
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.getElementById('mobile').style = "background-image: url('./back.png');  background-repeat: no-repeat;  background-position: center;  background-size: cover; height: 100%;  width: 100%; "
 }
+
+
+function dropdownChanges() {
+    const accessoryThirdCol = document.getElementById('accessoryThirdCol');
+    const accessoryThirdColHeader = document.getElementById("accessoryThirdColHeader");
+    const accessorySecondCol = document.getElementById("accessorySecondCol");
+
+    const supportThirdColHeader = document.getElementById("supportThirdColHeader");
+    const supportSecondCol = document.getElementById("supportSecondCol");
+    const supportThirdCol = document.getElementById("supportThirdCol");
+
+
+    if (intViewportWidth < 1120) {
+        if (appended === false) {
+
+            //for accessory drop
+            let colToAdd = document.createElement('div');
+            colToAdd.setAttribute('id', "tempAccessoryCol");
+            colToAdd.innerHTML = accessoryThirdCol.innerHTML;
+            accessoryThirdCol.style = "display: none";
+            accessoryThirdColHeader.style = "display: none";
+            console.log(colToAdd.toString)
+            accessorySecondCol.innerHTML += colToAdd.outerHTML;
+            accessorySecondCol.style = "right: 10px";
+            document.getElementById('accessoryMegamenu').style = "width: 525px";
+
+            //for support drop
+            let supportColToAdd = document.createElement('div');
+            supportColToAdd.setAttribute('id', "tempSupportCol");
+            supportColToAdd.innerHTML = supportThirdCol.innerHTML;
+            supportThirdCol.style = "display: none";
+            supportThirdColHeader.style = "display: none";
+            console.log(colToAdd.toString)
+            supportSecondCol.innerHTML += supportColToAdd.outerHTML;
+            supportSecondCol.style = "right: 10px";
+            document.getElementById("supportDropdown").style = "width: 525px";
+
+            appended = true;
+
+        }
+
+    } else {
+        console.log('yo')
+            //accessory 
+        document.getElementById('accessoryMegamenu').style = "width: 725px";
+        document.getElementById("tempAccessoryCol").parentNode.removeChild(document.getElementById("tempAccessoryCol"));
+        accessoryThirdCol.style = "display: block"
+        accessoryThirdColHeader.style = "display: block"
+        accessorySecondCol.style = "right: 0px";
+
+        //support
+        document.getElementById('supportDropdown').style = "width: 725px";
+        document.getElementById("tempSupportCol").parentNode.removeChild(document.getElementById("tempSupportCol"));
+        supportThirdCol.style = "display: block"
+        supportThirdColHeader.style = "display: block"
+        supportSecondCol.style = "right: 0px";
+
+
+        appended = false
+    }
+}
+
+if (intViewportWidth < 1120) {
+    dropdownChanges();
+}
+
+//on resize window
+function reportWindowSize() {
+    intViewportWidth = window.innerWidth;
+    dropdownChanges();
+}
+
+window.onresize = reportWindowSize;

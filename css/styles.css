@@ -342,8 +342,7 @@
 .dropdownHeader {
     padding: 0;
     margin: 0;
-    height: 55px;
-    width: 350px;
+    width: 80%;
     padding-left: 20px;
 }
 
@@ -382,7 +381,7 @@
 .listItemStyle {
     color: #323e88;
     width: 100%;
-    padding-left: 45px;
+    padding-left: 30px;
 }
 
 .leftdropItemStyle {
@@ -415,13 +414,26 @@
     /* padding-left: 30px; */
 }
 
-.accessoryMegamenu {
+#supportDropdown {
+    width: 725px;
+}
+
+#supportSecondCol {
+    position: relative;
+}
+
+#accessoryMegamenu {
     left: 350px;
     right: 0;
     width: 49%;
     padding: 0;
     padding-bottom: 15px;
     position: fixed;
+    width: 725px;
+}
+
+#accessorySecondCol {
+    position: relative;
 }
 
 .accessoryItems {
@@ -436,7 +448,7 @@
 
 .accessoryDrop {
     position: absolute;
-    transform: translate3d(-160px, 0px, 0px);
+    transform: translate3d(-172px, 0px, 0px);
     top: 0px;
     left: 0px;
     will-change: transform;
