@@ -144,6 +144,7 @@
         right: 0;
         width: 100%;
         margin-top: 0;
+        padding-bottom: 2px;
     }
 }
 
@@ -188,14 +189,14 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 27px;
+        height: 26px;
         padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 4px;
+        top: 3px;
     }
     .megaMenuSubMenuItem {
         color: #314083 !important;
@@ -211,7 +212,7 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 27px;
+        height: 26px;
         font-size: 90%;
         padding: 0;
     }
@@ -219,7 +220,7 @@
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 4px;
+        top: 3px;
     }
     .megaMenuSubMenuItem {
         color: #314083 !important;
@@ -259,7 +260,7 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 25px;
+        height: 24px;
         font-size: 70%;
         padding: 0;
     }
@@ -267,7 +268,7 @@
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 3px;
+        top: 2px;
     }
     .megaMenuSubMenuItem {
         color: #314083 !important;
@@ -283,7 +284,7 @@
         background-color: #D7D9E7;
         width: 90%;
         margin: 0 auto;
-        height: 24px;
+        height: 23px;
         font-size: 65%;
         padding: 0;
     }
@@ -291,7 +292,7 @@
         border-right: 2px solid #323e88;
         height: 20px;
         position: relative;
-        top: 2px;
+        top: 1.6px;
     }
     .megaMenuSubMenuItem {
         color: #314083 !important;
