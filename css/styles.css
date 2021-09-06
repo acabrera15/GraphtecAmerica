@@ -189,6 +189,7 @@
         width: 90%;
         margin: 0 auto;
         height: 27px;
+        padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
@@ -212,6 +213,7 @@
         margin: 0 auto;
         height: 27px;
         font-size: 90%;
+        padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
@@ -235,6 +237,7 @@
         margin: 0 auto;
         height: 25px;
         font-size: 80%;
+        padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
@@ -258,6 +261,7 @@
         margin: 0 auto;
         height: 25px;
         font-size: 70%;
+        padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
@@ -281,6 +285,7 @@
         margin: 0 auto;
         height: 24px;
         font-size: 65%;
+        padding: 0;
     }
     .rightBorder {
         border-right: 2px solid #323e88;
