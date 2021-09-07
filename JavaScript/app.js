@@ -183,6 +183,7 @@ function dropdownChanges() {
     const supportSecondCol = document.getElementById("supportSecondCol");
     const supportThirdCol = document.getElementById("supportThirdCol");
 
+    const dropdownHeaders = document.getElementsByClassName("dropdownHeader");
 
     if (intViewportWidth < 1120) {
         if (appended === false) {
@@ -198,6 +199,7 @@ function dropdownChanges() {
             accessorySecondCol.style = "right: 10px";
             document.getElementById('accessoryMegamenu').style = "width: 525px";
 
+
             //for support drop
             let supportColToAdd = document.createElement('div');
             supportColToAdd.setAttribute('id', "tempSupportCol");
@@ -208,6 +210,10 @@ function dropdownChanges() {
             supportSecondCol.innerHTML += supportColToAdd.outerHTML;
             supportSecondCol.style = "right: 10px";
             document.getElementById("supportDropdown").style = "width: 525px";
+
+            for (let i = 0; i < dropdownHeaders.length; i++) {
+                dropdownHeaders[i].style = "width: 84%";
+            }
 
             appended = true;
 
@@ -229,6 +235,9 @@ function dropdownChanges() {
         supportThirdColHeader.style = "display: block"
         supportSecondCol.style = "right: 0px";
 
+        for (let i = 0; i < dropdownHeaders.length; i++) {
+            dropdownHeaders[i].style = "width: 60%";
+        }
 
         appended = false
     }
