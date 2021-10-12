@@ -33,6 +33,8 @@
 
 .miniNavItems {
     font-size: 1.2em;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .miniNavDotDivider {
@@ -41,7 +43,7 @@
     width: 4px;
     font-size: .3em;
     position: relative;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 .leftColStyle {}
@@ -79,13 +81,15 @@
 
 .mediaRowStyles {
     height: 50px;
-    background-color: green;
     width: 100%;
     margin: 0;
+    position: relative;
+    top: 15%;
+    margin-bottom: .5%;
 }
 
 .mediaRowStyles:hover {
-    border: orangered solid 5px;
+    border: #e0633a solid 5px;
 }
 
 .blueDot {
@@ -101,4 +105,58 @@
 .mediaColStyles {
     padding-left: 55px;
     margin: auto 0;
+}
+
+.cutterStyles {
+    background-image: url('../assets/images/Desktop/Blades\ images/MaterialChart.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bottomLeftHeader {
+    height: 40px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.bottomLeftNav {
+    color: #314083;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 20px;
+}
+
+.bottomLeftNavItems {
+    list-style: none;
+    font-family: "Myriad";
+    font-size: 1.5em;
+}
+
+.bottomLeftNavItems:hover {
+    border-bottom: #e0633a solid 3px;
+}
+
+.bottomLeftDotDivders {
+    background-color: #314083;
+}
+
+#bottomRightImage {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    bottom: 60px
+}
+
+.bottomRightheader {
+    background-color: #314083;
+    height: 50px;
+}
+
+.bottomRightCol {
+    height: 300px;
+}
+
+.buyBar {
+    position: relative;
+    bottom: 50px;
 }
