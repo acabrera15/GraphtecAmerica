@@ -410,9 +410,7 @@
     display: inline-block;
     /* Needed to add space between the bullet and the text */
     width: .4em;
-    /* Also needed for space (tweak if needed) */
-    /* margin-left: -1em; */
-    /* Also needed for space (tweak if needed) */
+    padding-right: 10px;
 }
 
 .listItemStyle {
@@ -432,7 +430,7 @@
 .bulletImageStyle {
     height: 20px;
     width: 22px;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom: 2px;
 }
 
@@ -506,6 +504,7 @@
     display: inline-block;
     /* Needed to add space between the bullet and the text */
     width: .4em;
+    padding-right: 13px;
     /* Also needed for space (tweak if needed) */
 }
 
@@ -618,6 +617,12 @@
 }
 
 .mobileFontColor {
+    color: #323e88;
+    padding-left: 47px !important;
+    font-size: 1.4em;
+}
+
+.mobileFontColor:focus {
     color: #323e88;
     padding-left: 47px !important;
     font-size: 1.4em;
