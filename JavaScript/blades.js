@@ -49,6 +49,13 @@ function changeMedia(t) {
 
 //move to he blade holders
 function bladeHolderClick() {
+    document.getElementById("bottomRightheader").style.display = "block";
+    document.getElementById("bottomRightImage").style.display = "block";
+    document.getElementById("buyBar").style.bottom = "50px";
+    document.getElementById("bottomLeftSection").style.bottom = "0px";
+
+
+
     document.getElementById("rightColStyle").innerHTML = "<img id='cutterHeaderImage'src = './assets/images/Desktop/Blades images/FC9000Title.png' / >";
     document.getElementById("rightColStyle").innerHTML += "<div id='bladeHolderHeader' >BLADE HOLDERS</div>";
     document.getElementById("rightColStyle").innerHTML += "<img id='holderImage' src='./assets/images/Desktop/Blades images/BladeHolders.png' />";
@@ -71,6 +78,13 @@ function bladeHolderClick() {
 
 //moving back to the blades page
 function showBlades() {
+    document.getElementById("bottomRightheader").style.display = "block";
+    document.getElementById("bottomRightImage").style.display = "block";
+    document.getElementById("buyBar").style.bottom = "50px";
+    document.getElementById("bottomLeftSection").style.bottom = "0px";
+
+
+
     document.getElementById("rightColStyle").innerHTML = ` <div class="row mediaRowStyles" id="media1" onclick="changeMedia(this)"></div>
     <div class="row mediaRowStyles" id="media2" onclick="changeMedia(this)"></div>
     <div class="row mediaRowStyles" id="media3" onclick="changeMedia(this)"></div>
@@ -88,6 +102,8 @@ function showBlades() {
 }
 
 function changeBladeHolders(t) {
+
+
     if (t.id === 'holder1') {
         document.getElementById("bottomRightImage").src = "./assets/images/Desktop/Blades images/PHP33CB09NHS.png";
         document.getElementById("bottomRightheader").innerHTML = "PHPP33-CB09N-HS"
@@ -105,4 +121,23 @@ function changeBladeHolders(t) {
         document.getElementById("bottomRightheader").innerHTML = "PHPP35-CB15-HS"
 
     }
+}
+
+function penHolderClick() {
+    document.getElementById("rightColStyle").innerHTML = "<img id='cutterHeaderImage'src = './assets/images/Desktop/Blades images/FC9000Title.png' / >";
+    document.getElementById("rightColStyle").innerHTML += "<div id='bladeHolderHeader' >PEN HOLDERS</div>";
+    document.getElementById("rightColStyle").innerHTML += "<img style='width:100%' src='./assets/images/Desktop/Blades images/PenHolders.png'/>";
+
+    document.getElementById("bottomRightImage").style.display = "none";
+
+    document.getElementById("bottomRightheader").innerHTML = "";
+    document.getElementById("bottomRightheader").style.display = "none";
+
+    document.getElementById("rightColStyle").style.backgroundImage = "url('')";
+
+    document.getElementById("buyBar").style.bottom = "0px";
+
+    document.getElementById("bottomLeftSection").style.position = "relative";
+    document.getElementById("bottomLeftSection").style.bottom = "315px";
+
 }
