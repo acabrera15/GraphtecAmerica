@@ -37,6 +37,10 @@
     margin-left: 2%;
 }
 
+.miniNavItems:hover {
+    border-bottom: #e0633a solid 3px;
+}
+
 .miniNavDotDivider {
     margin: 0px !important;
     height: 3px !important;
@@ -48,7 +52,7 @@
 
 .leftColStyle {}
 
-.rightColStyle {
+#rightColStyle {
     background-image: url('../assets/images/Desktop/Blades\ images/MaterialChart.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -144,19 +148,48 @@
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
-    bottom: 60px
+    bottom: 60px;
 }
 
-.bottomRightheader {
+#bottomRightheader {
     background-color: #314083;
     height: 50px;
+    color: white;
+    font-size: 2.3em;
+    padding-left: 54px;
+    font-family: myriad;
 }
 
 .bottomRightCol {
     height: 300px;
 }
 
-.buyBar {
+#buyBar {
     position: relative;
     bottom: 50px;
+}
+
+#compCutter {
+    height: 155px;
+    position: relative;
+    bottom: 200px;
+    left: 430px
+}
+
+#cutterHeaderImage {
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+#bladeHolderHeader {
+    background-color: #314083;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 5%;
+    margin-top: 3%
+}
+
+#holderImage {
+    width: 100%;
+    padding-top: 6%;
 }

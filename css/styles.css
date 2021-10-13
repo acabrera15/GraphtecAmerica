@@ -741,3 +741,7 @@ body {
         display: none;
     }
 }
+
+.linksCursor {
+    cursor: pointer;
+}

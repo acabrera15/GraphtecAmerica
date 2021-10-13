@@ -1602,14 +1602,14 @@
                     <div class="row" id="miniNavHeader">FC9000 ACCESSORIES</div>
                     <div class="row">
                         <ul id="miniNavStyle">
-                            <li class="miniNavItems d-inline">BLADES</li>
+                            <li class="miniNavItems d-inline linksCursor" onclick="showBlades()">BLADES</li>
 
                             <div class="DotDivider miniNavDotDivider d-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-                            <li class="miniNavItems d-inline">BLADE HOLDERS</li>
+                            <li class="miniNavItems d-inline linksCursor" onclick="bladeHolderClick() ">BLADE HOLDERS</li>
 
                             <div class="DotDivider miniNavDotDivider d-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                            <li class="miniNavItems d-inline">PEN HOLDERS</li>
+                            <li class="miniNavItems d-inline linksCursor">PEN HOLDERS</li>
 
                         </ul>
                     </div>
@@ -1622,17 +1622,14 @@
                 <img src="./assets/images/Desktop/Blades images/FC900series.png" class="img-fluid" alt="Responsive image" />
 
             </div>
-            <div class="col-7 rightColStyle">
-                <div class="row mediaRowStyles"></div>
-                <div class="row mediaRowStyles"></div>
-                <div class="row mediaRowStyles"></div>
-                <div class="row mediaRowStyles"></div>
-                <div class="row mediaRowStyles"></div>
-                <div class="row mediaRowStyles"></div>
-
+            <div class="col-7" id="rightColStyle">
+                <div class="row mediaRowStyles" id="media1" onclick="changeMedia(this)"></div>
+                <div class="row mediaRowStyles" id="media2" onclick="changeMedia(this)"></div>
+                <div class="row mediaRowStyles" id="media3" onclick="changeMedia(this)"></div>
+                <div class="row mediaRowStyles" id="media4" onclick="changeMedia(this)"></div>
+                <div class="row mediaRowStyles" id="media5" onclick="changeMedia(this)"></div>
+                <div class="row mediaRowStyles" id="media6" onclick="changeMedia(this)"></div>
             </div>
-
-
         </div>
 
         <div class="row g-0 bottomRightCol">
@@ -1643,7 +1640,7 @@
                 </div>
                 <div class="row ">
                     <ul class="bottomLeftNav">
-                        <div class="DotDivider miniNavDotDivider d-inline bottomLeftDotDivders">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <div class="DotDivider miniNavDotDivider d-inline bottomLeftDotDivders" id="media1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                         <li class="bottomLeftNavItems d-inline">BLADES / HOLDERS</li>
                         <br />
                         <div class="DotDivider miniNavDotDivider d-inline bottomLeftDotDivders">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
@@ -1664,9 +1661,10 @@
                 </div>
             </div>
             <div class="col-7 bottomRightCol">
-                <div class="bottomRightheader"></div>
+                <div id="bottomRightheader"></div>
                 <img src="./assets/images/Desktop/Blades images/CrossCutter.png" class=" img-fluid" id="bottomRightImage" alt="Responsive image " />
-                <img src="./assets/images/Desktop/Blades images/Buystrip.png" class="img-fluid buyBar" />
+                <img src="./assets/images/Desktop/Blades images/Buystrip.png" class="img-fluid" id="buyBar" />
+                <img src="" id="compCutter" />
             </div>
 
         </div>
@@ -1680,6 +1678,7 @@
 
         <!-- custom JS -->
         <script src="./JavaScript/app.js "></script>
+        <script src="./JavaScript/blades.js"></script>
 </body>
 
 </html>
